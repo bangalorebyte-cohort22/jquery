@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery </title>
+    <!-- <script src ='js/jquery.js' type='text/javascript'></script>  for direct use from local-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <!-- Via CDN jquery -->
+</head>
+<body>
+    <h1>Welcome to JQuery</h1>
+    <div class="container">
+        <h2 id="Heading1">Title One</h2>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, voluptatibus nam? Qui consectetur quidem amet sapiente enim obcaecati aliquam error?</p>
+        <h2 id="Heading2">Title Two</h2>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur aadipisicing elit. Sequi a praesentium totam esse ex vel cupiditate, <a href="www.google.com">atque reiciendis</a> placeat in.</p>  
+              
+    </div>
+    <ul id="list">
+        <li>List Item</li>
+        <li>List Item </li>
+        <li>List Item</li>
+        <li>List Item </li>
+        <li>List Item</li>
+        <li>List Item </li>
+    </ul>
+
+
+    <script>
+        // $('h1').hide()  // hide main element
+         // $('h2#Heading1').hide() //hide using id
+        // $('h1').css('color','red') //change css
+        // $('.container').hide() //hide using classes
+        // $('ul#list li').css('color','red');
+        // $('ul#list li:first').css('color','blue');
+        // $('ul#list li:last').css('color', 'blue');
+        // $('ul#list li:even').css('color', 'blue');
+        // $('ul#list li:odd').css('color', 'grey');
+        // $('ul#list li:nth-child(5)').css('color', 'grey');
+        $('a[href="www.google.com"]').css('color','yellow')
+
+
+
+
+    
+    </script>
+</body>
+</html>
