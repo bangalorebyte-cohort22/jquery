@@ -15,7 +15,7 @@
         <h2 id="Heading1">Title One</h2>
         <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, voluptatibus nam? Qui consectetur quidem amet sapiente enim obcaecati aliquam error?</p>
         <h2 id="Heading2">Title Two</h2>
-        <p id="para">Lorem, ipsum dolor sit amet consectetur aadipisicing elit. Sequi a praesentium totam esse ex vel cupiditate, <a href="www.google.com">atque reiciendis</a> placeat in.</p>  
+        <p id="para">Lorem, ipsum dolor sit amet consectetur aadipisicing elit. Sequi a praesentium totam esse ex vel cupiditate, <a href="www.yahoo.com">atque reiciendis</a> placeat in.</p>  
               
     </div>
     <ul id="list">
@@ -26,9 +26,56 @@
         <li>List Item</li>
         <li>List Item </li>
     </ul>
+<hr>
+
+    <div class="container">
+        <h3>Mouse Events</h3>
+        <button id="btn1">Button One</button>
+        <button id="btn2">Button Two</button>
+        <p id="temp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit architecto sunt nobis, corrupti repellat facilis sint vel pariatur earum!</p>
+    </div>
+    <br>
+    <hr>
+    <br>  
+
+    
+    <div>
+    <form action="/" id="form">
+        <label>Name :</label>
+        <input type="text" id="name"><br>
+        <label>Email :</label>
+        <input type="email" id='email'><br>
+        <label>Gender</label>
+        <select id="gender" name='gender'>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <input type="submit" value='submit'>
+    </form>
+    </div>
+
 
 
     <script>
+        //EVENTS
+        $(document).ready(function(){
+            $('button#btn1').hover(function(){
+                $('p#temp').toggle();
+            })
+
+            $('button#btn2').on('click',function(){
+                $('h1').html('Goodbye to Jquery')
+
+            })
+
+
+        })
+        
+
+
+
+
+        // SELECTORS
         // $('h1').hide()  // hide main element
          // $('h2#Heading1').hide() //hide using id
         // $('h1').css('color','red') //change css
@@ -39,7 +86,11 @@
         // $('ul#list li:even').css('color', 'blue');
         // $('ul#list li:odd').css('color', 'grey');
         // $('ul#list li:nth-child(5)').css('color', 'grey');
-        $('a[href="www.google.com"]').css('color','yellow')
+        // $('a[href="www.yahoo.com"]').css('color','yellow')
+        // $('*').hide()
+
+        // 
+        
 
 
 
